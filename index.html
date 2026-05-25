@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanguard Nexus | Sovereign Threat Systems</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Bonheur+Royale&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @custom-variant dark (&:where(.dark, .dark *));
+
+        .font-serif { font-family: 'Cinzel', serif; }
+        .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-script { font-family: 'Bonheur Royale', cursive; }
+    </style>
+</head>
+<body class="dark bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans antialiased transition-colors duration-500">
+
+    <!-- Premium Header Area -->
+    <header class="w-full bg-white/90 dark:bg-slate-950/90 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800/80 fixed top-0 z-50 transition-colors duration-500">
+        <div class="max-w-6xl mx-auto h-20 px-8 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-5 h-5 border border-slate-900 dark:border-slate-400 rotate-45 flex items-center justify-center transition-transform group-hover:rotate-90 duration-500">
+                    <div class="w-1 h-1 bg-slate-900 dark:bg-slate-400"></div>
+                </div>
+                <span class="font-serif text-sm tracking-[0.3em] font-medium uppercase text-slate-900 dark:text-white">Vanguard Nexus</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-10 text-[11px] font-medium uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
+                <a href="index.html" class="text-slate-900 dark:text-white hover:text-slate-600 dark:hover:text-slate-300 transition-colors">Practice Domains</a>
+                <a href="article1.html" class="hover:text-slate-900 dark:hover:text-slate-200 transition-colors">Dossier I</a>
+                <a href="article2.html" class="hover:text-slate-900 dark:hover:text-slate-200 transition-colors">Dossier II</a>
+                <a href="article3.html" class="hover:text-slate-900 dark:hover:text-slate-200 transition-colors">Dossier III</a>
+            </nav>
+
+            <div class="flex items-center gap-6">
+                <button id="themeToggle" class="p-2 rounded-lg border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-900 transition-all duration-300 flex items-center justify-center cursor-pointer" aria-label="Toggle Theme">
+                    <svg id="sunIcon" class="w-4 h-4 text-slate-400 hidden dark:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <svg id="moonIcon" class="w-4 h-4 text-slate-600 dark:hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                </button>
+                <a href="index.html" class="text-[10px] font-medium uppercase tracking-[0.2em] border border-slate-900 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-200 px-6 py-2.5 hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-slate-950 transition-all duration-300">
+                    Main Terminal
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="min-h-screen pt-20">
+        <!-- Hero Segment -->
+        <section class="pt-28 pb-20 bg-gradient-to-b from-slate-100 via-white to-slate-50 dark:from-slate-950 dark:via-slate-950 dark:to-slate-900 relative transition-colors duration-500">
+            <div class="absolute inset-y-0 left-1/2 -translate-x-1/2 w-full max-w-6xl border-x border-slate-200/50 dark:border-slate-800/20 pointer-events-none"></div>
+            <div class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-slate-300 dark:via-slate-700 to-transparent opacity-50"></div>
+            
+            <div class="max-w-5xl mx-auto px-8 text-center relative z-10">
+                <span class="text-[10px] font-semibold uppercase tracking-[0.4em] text-slate-400 dark:text-slate-500 block mb-6">Simulation Sandbox // Corporate Defensive Architecture</span>
+                <h1 class="font-serif text-3xl sm:text-5xl font-normal text-slate-900 dark:text-white leading-[1.25] max-w-4xl mx-auto tracking-wide">
+                    GOVERNANCE, RESILIENCE, & <br class="hidden sm:inline" /> 
+                    <span class="bg-gradient-to-r from-slate-800 via-slate-500 to-slate-800 dark:from-slate-200 dark:via-slate-400 dark:to-slate-200 bg-clip-text text-transparent">SYNTHETIC TRUST</span> FOR ENTERPRISES.
+                </h1>
+                <p class="mt-8 text-sm sm:text-base text-slate-500 dark:text-slate-400 font-light max-w-2xl mx-auto leading-relaxed tracking-wide">
+                    A premium fictional showcase simulating mock advisory strategies across high-risk vector landscapes. Engineering modern enterprise resilience models for executive analysis.
+                </p>
+            </div>
+        </section>
+
+        <!-- Vertical Stack Matrix Directory -->
+        <section class="py-20 bg-white dark:bg-slate-950 transition-colors duration-500">
+            <div class="max-w-4xl mx-auto px-8">
+                <div class="text-center md:text-left mb-12 border-b border-slate-200 dark:border-slate-900 pb-8">
+                    <span class="text-[10px] font-semibold uppercase tracking-[0.4em] text-slate-400 dark:text-slate-500 block mb-2">Modular Matrix</span>
+                    <h2 class="font-serif text-2xl sm:text-3xl font-normal text-slate-900 dark:text-white tracking-wider">SIMULATED ADVISORY DOMAINS</h2>
+                </div>
+
+                <div class="flex flex-col gap-px bg-slate-200 dark:bg-slate-800 border border-slate-200 dark:border-slate-800 shadow-xl dark:shadow-2xl rounded-lg overflow-hidden transition-colors duration-500">
+                    
+                    <a href="article1.html" class="text-left bg-slate-50/70 dark:bg-slate-900 p-8 sm:p-10 transition-all duration-300 hover:bg-white dark:hover:bg-slate-900/60 group flex flex-col sm:flex-row sm:items-center gap-6 w-full">
+                        <span class="font-serif text-slate-400 dark:text-slate-600 text-xl font-medium tracking-wider w-12 block shrink-0 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">I</span>
+                        <div class="space-y-2 grow">
+                            <h3 class="font-serif text-lg font-medium text-slate-900 dark:text-white tracking-wide group-hover:text-slate-700 dark:group-hover:text-slate-300 transition-colors">Synthetic Security Vectors</h3>
+                            <p class="text-xs font-light text-slate-500 dark:text-slate-400 leading-relaxed tracking-wide max-w-2xl">
+                                Assessing macro threat signatures, simulating artificial perimeter failure vectors, and deploying mock hardening models.
+                            </p>
+                        </div>
+                        <div class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white shrink-0 whitespace-nowrap mt-4 sm:mt-0 transition-colors">
+                            Launch Dossier →
+                        </div>
+                    </a>
+
+                    <a href="article2.html" class="text-left bg-slate-50/70 dark:bg-slate-900 p-8 sm:p-10 transition-all duration-300 hover:bg-white dark:hover:bg-slate-900/60 group flex flex-col sm:flex-row sm:items-center gap-6 w-full">
+                        <span class="font-serif text-slate-400 dark:text-slate-600 text-xl font-medium tracking-wider w-12 block shrink-0 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">II</span>
+                        <div class="space-y-2 grow">
+                            <h3 class="font-serif text-lg font-medium text-slate-900 dark:text-white tracking-wide group-hover:text-slate-700 dark:group-hover:text-slate-300 transition-colors">Simulated Oversight Metrics</h3>
+                            <p class="text-xs font-light text-slate-500 dark:text-slate-400 leading-relaxed tracking-wide max-w-2xl">
+                                Structuring technical documentation stress tests, auditing simulated compromise environments, and baseline analysis loops.
+                            </p>
+                        </div>
+                        <div class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white shrink-0 whitespace-nowrap mt-4 sm:mt-0 transition-colors">
+                            Launch Dossier →
+                        </div>
+                    </a>
+
+                    <a href="article3.html" class="text-left bg-slate-50/70 dark:bg-slate-900 p-8 sm:p-10 transition-all duration-300 hover:bg-white dark:hover:bg-slate-900/60 group flex flex-col sm:flex-row sm:items-center gap-6 w-full">
+                        <span class="font-serif text-slate-400 dark:text-slate-600 text-xl font-medium tracking-wider w-12 block shrink-0 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">III</span>
+                        <div class="space-y-2 grow">
+                            <h3 class="font-serif text-lg font-medium text-slate-900 dark:text-white tracking-wide group-hover:text-slate-700 dark:group-hover:text-slate-300 transition-colors">Algorithmic Resilience</h3>
+                            <p class="text-xs font-light text-slate-500 dark:text-slate-400 leading-relaxed tracking-wide max-w-2xl">
+                                Formulating operational failure contingencies, data mirroring pathways, and simulated fallback loops during zero-state architecture stress events.
+                            </p>
+                        </div>
+                        <div class="text-[10px] font-semibold uppercase tracking-wider text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white shrink-0 whitespace-nowrap mt-4 sm:mt-0 transition-colors">
+                            Launch Dossier →
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signature Quote Segment -->
+        <section class="py-16 bg-white dark:bg-slate-950 text-center select-none transition-colors duration-500">
+            <div class="max-w-2xl mx-auto px-8">
+                <div class="mb-6">
+                    <span class="font-script text-4xl sm:text-5xl text-slate-950 dark:text-white block leading-none filter drop-shadow-sm transition-colors duration-500">
+                        "True resilience is built in silence, verified in shadow."
+                    </span>
+                </div>
+                <div class="w-1.5 h-1.5 bg-slate-400 dark:bg-slate-600 rotate-45 mx-auto opacity-60"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt-16 pb-12 bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-900 transition-colors duration-500 text-center">
+        <div class="max-w-2xl mx-auto px-8">
+            <span class="text-[10px] font-semibold uppercase tracking-[0.4em] text-slate-400 dark:text-slate-500 block mb-3">End of Simulation Showcase</span>
+            <h2 class="font-serif text-xs uppercase text-slate-900 dark:text-white tracking-widest mb-4">SANDBOX PORTFOLIO ARCHITECTURE</h2>
+            <p class="text-[11px] font-light text-slate-400 dark:text-slate-500 max-w-md mx-auto mb-8">
+                High-fidelity mockup engineered with Tailwind v4 runtime libraries. No telemetry is collected.
+            </p>
+            <div class="w-1.5 h-1.5 bg-slate-900 dark:bg-white rotate-45 mx-auto"></div>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const bodyEl = document.body;
+        
+        if (localStorage.getItem('theme') === 'light') {
+            bodyEl.classList.remove('dark');
+        } else {
+            bodyEl.classList.add('dark');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            bodyEl.classList.toggle('dark');
+            localStorage.setItem('theme', bodyEl.classList.contains('dark') ? 'dark' : 'light');
+        });
+    </script>
+</body>
+</html>
